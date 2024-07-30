@@ -18,6 +18,7 @@ const Sidebar = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
+        axios.defaults.withCredentials = true;
         const response = await axios.get("https://baateyin.onrender.com/api/v1/user/", {
           withCredentials: true 
         });

@@ -11,7 +11,7 @@ import { app,server } from "./socket/socket.js";
 
 
 const corsOption = {
-    origin:"http://localhost:5173",
+    origin:"https://bateyien.pages.dev/",
     credentials:true
 }
 app.use(cors(corsOption));

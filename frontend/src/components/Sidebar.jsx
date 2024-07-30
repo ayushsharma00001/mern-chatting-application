@@ -18,7 +18,9 @@ const Sidebar = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get("https://baateyin.onrender.com/api/v1/user");
+        const response = await axios.get("https://baateyin.onrender.com/api/v1/user", {
+          withCredentials: true 
+        });
         setFullUserList(response.data);
       } catch (error) {
         console.error("Error fetching users:", error);

@@ -1,0 +1,252 @@
+.homepage-outer-div{
+    display: flex;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(128, 128, 128, 0.539);
+}
+
+
+::-webkit-scrollbar{
+    width: 6px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #000;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+
+
+
+
+
+
+/* sidebar  */
+.search-input{
+    width: 20vw;
+    padding: 8px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 2px solid #121212;
+    background-color: #121212;
+}
+
+.search-outer-div{
+    height: 100vh;
+    background-color: #161515;
+
+}
+.searchForm{
+    display: flex;
+    width: 28vw;
+    background-color: black;
+    color: white !important;
+    padding: 0.5rem;
+    align-items: center;
+}
+
+
+.seachComp{
+    margin: 0.5rem 0.2rem 0 0 !important;
+    width: 65% !important;
+    background-color: green !important;
+
+}
+
+.otherUsers{
+    padding: 0.5rem;
+    overflow: hidden;
+    height: 81vh;
+}
+
+.other-users-parent-div{
+    height: 100%;
+    overflow: auto;
+    
+}
+
+/* .other-users-parent-div::-webkit-scrollbar{
+    display: none;
+} */
+
+
+
+.profile-photo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+.online{
+    border: 3px solid rgb(3, 251, 3);
+}
+
+.whole-user{
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+}
+.whole-user-selected{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+    color: black;
+}
+
+.whole-user:hover{
+    background-color: white;
+    color: black;
+}
+
+.whole-user img{
+    margin: 0 0.7rem 0 0;
+}
+.whole-user-selected img{
+    margin: 0 0.7rem 0 0;
+}
+
+.logout-btn{
+    margin-left: 0.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* message container  */
+.message-container-parent-div{
+    background-color: #fff;
+    width: 72vw;
+}
+.whole-user-message-container{
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+    width: 100%;
+    background-color: #000000e0;
+
+}
+
+.whole-user-message-container img{
+    padding: 0 10px;
+}
+
+
+.msg-input-outer-div{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 72vw;
+    padding: 0.5rem;
+    /* background-color: azure; */
+}
+.msg-input-outer-div input{
+    width: 90%;
+    padding: 0.8rem;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 4px;
+    /* margin-right: 0.5rem; */
+}
+.send-icon{
+    font-size: 2rem !important;
+    border: 1px solid gray;
+    padding: 0.2rem;
+    background-color: rgb(18,18,18);
+    cursor: pointer;
+    margin: 0 !important;
+}
+
+.send-icon-btn{
+    border: none;
+    background-color: white;
+    padding: 0;
+}
+
+.msgs-div{
+    max-height:83vh ;
+    overflow: auto;
+    z-index: 100;
+}
+
+
+
+.start-msg{
+    text-align: left;
+    margin: 1rem 2rem 1rem 1rem;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.end-msg{
+    text-align: right;
+    margin: 1rem;
+    display: flex;
+    justify-content: flex-end;
+}
+.end-msg .msg{
+    background-color: rgb(32, 32, 214);
+}
+
+.start-msg .msg{
+    background-color: rgb(79, 79, 91);
+}
+
+.msg{
+    width: fit-content;
+    padding: 0.5rem;
+    border-radius: 10px;
+}
+
+.whole-msg{
+    display: flex;
+
+}
+
+.msg-photo{
+    width: 40px;
+    height: 40px;
+    margin-right: 0.5rem;
+
+}
+
+
+.welcome-note{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex: 1;
+    font-size: 4vw;
+}
+
+.welcome-note-login{
+    height: 100vh;
+    flex: 1;
+    font-size: 4vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}

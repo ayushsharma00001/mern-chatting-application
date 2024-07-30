@@ -1,0 +1,33 @@
+.App{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.reg-h1{
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 20px;
+
+}
+.reg-inner-div{
+    padding: 20px;
+    background-color: rgba(128, 128, 128, 0.704);
+    background-blend-mode: color-burn;
+    border-radius: 5px;
+    
+}
+
+.reg-inner-div form{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 0;
+}
+
+.input{
+    margin: 1rem 0;
+}
+
+.reg-btn{
+    margin: 0.5rem 0 !important;
+}

@@ -18,7 +18,7 @@ const Sidebar = () => {
   useEffect(() => {
     const fetchUsers = async () => {
       try {
-        const response = await axios.get("http://localhost:8080/api/v1/user/");
+        const response = await axios.get("https://mern-chat-tmpe.onrender.com/api/v1/user/");
         setFullUserList(response.data);
       } catch (error) {
         console.error("Error fetching users:", error);
@@ -31,7 +31,7 @@ const Sidebar = () => {
 
   const logoutHandler = async () => {
     try {
-      const res = await axios.get("http://localhost:8080/api/v1/user/logout");
+      const res = await axios.get("https://mern-chat-tmpe.onrender.com/api/v1/user/logout");
       navigate("/login");
       toast.success(res.data.message);
       dispatch(setSelectedUser(null));
